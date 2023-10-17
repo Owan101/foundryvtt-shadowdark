@@ -22,25 +22,19 @@
 		</div>
 		<div class="weapon-detail">
 			<label>{{localize 'SHADOWDARK.item.weapon_damage.oneHanded'}}</label>
-			<select name="system.damage.oneHanded">
-				<option value="">&mdash;</option>
-				{{selectOptions
-					config.WEAPON_BASE_DAMAGE
-					selected=system.damage.oneHanded
-					localize=false
-				}}
-			</select>
+			<input
+				name="system.damage.oneHanded"
+				type="text"
+				value="{{item.weapon_damage.oneHanded}}"
+			/>
 		</div>
 		<div class="weapon-detail">
 			<label>{{localize 'SHADOWDARK.item.weapon_damage.twoHanded'}}</label>
-			<select name="system.damage.twoHanded">
-				<option value="">&mdash;</option>
-				{{selectOptions
-					config.WEAPON_BASE_DAMAGE
-					selected=system.damage.twoHanded
-					localize=false
-				}}
-			</select>
+			<input
+				name="system.damage.twoHanded"
+				type="text"
+				value="{{item.weapon_damage.twoHanded}}"
+			/>
 		</div>
 		<div class="armor-detail">
 			<label>{{localize 'SHADOWDARK.item.weapon.base_weapon.title'}}</label>
